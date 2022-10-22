@@ -1,0 +1,38 @@
+body{background-color:dodgerblue;text-align: center;}
+.main-div{
+  display: flex;
+  justify-content: space-around;
+}
+.home-div{
+  
+}
+.guest-div{
+  
+}
+
+.score{
+  background-color: black;
+  height: 75px;
+  width: 120px;
+  border-radius: 10px;
+  border-top: 0px;
+  color: red;
+  font-size: 65px;
+  margin-bottom:10px;
+}
+
+.home-buttons{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+}
+
+.incre-button{
+  background-color:dodgerblue;
+  color:white;
+  border:0.5px solid white;
+  border-radius:5px;
+  padding:3px 10px;
+  cursor:pointer;
+}
+

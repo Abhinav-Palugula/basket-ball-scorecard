@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Score Card</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="home-div">
+        <p style="margin-bottom: 0px;color:white;font-size:20px;font-weight: bold;">Home</p>
+        <div class="score" id="home-score"></div>
+        <div class="home-buttons">
+          <button class="incre-button" onclick="add1home()">+1</button>
+          <button class="incre-button" onclick="add2home()">+2</button>
+          <button class="incre-button" onclick="add3home()">+3</button>
+        </div>
+      </div>
+     <div class="home-div">
+        <p style="margin-bottom: 0px;color:white;font-size:20px;font-weight: bold;">GUEST</p>
+        <div class="score" id="guest-score"></div>
+        <div class="home-buttons">
+          <button class="incre-button" onclick="add1guest()">+1</button>
+          <button class="incre-button" onclick="add2guest()">+2</button>
+          <button class="incre-button" onclick="add3guest()">+3</button>
+        </div>
+      </div>
+    </div>
+    <p style = "text-align:center;color:white;" id = "leading"></p>
+    <button class="incre-button" style="text-align:center" onclick="reset()" >Reset</button>
+    <script src="script.js"></script>
+  </body>
+</html>
