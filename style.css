@@ -36,7 +36,6 @@ body{background-color:dodgerblue;text-align: center;}
   cursor:pointer;
 }
 #date{
-  display:block;
   background-color: white;
   border: none;
   border-radius: 15px;
