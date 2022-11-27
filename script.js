@@ -1,3 +1,12 @@
+function input1(){
+  var team1 = document.getElementById("inputone").value;
+  var team2 = document.getElementById("inputtwo").value;
+  document.getElementById("team1name").innerHTML = team1;
+  document.getElementById("team2name").innerHTML = team2;
+  document.getElementById("inputdiv").style.display = "none";
+  document.getElementsByClassName("main-div").style.display = "flex";
+}
+
 let homeScore = 0;
 let guestScore = 0;
 document.getElementById("home-score").innerHTML = homeScore;
@@ -72,6 +81,7 @@ function reset(){
   document.getElementById("guest-score").innerHTML = guestScore;
   document.getElementById("leading").innerHTML = "Leading: NONE"
 }
+
 function displaydate(){
   const d = new Date();
   var month = "";
@@ -114,6 +124,6 @@ function displaydate(){
       break;
   }
   
-  document.getElementById("date").innerHTML = month + " " + d.getDate() + " " + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ":" +d.getSeconds();
+  document.getElementById("demo").innerHTML = month + " " + d.getDate() + " " + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ":" +d.getSeconds();
 }
 setInterval(displaydate, 1000);

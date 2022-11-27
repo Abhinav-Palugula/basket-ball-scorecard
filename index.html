@@ -1,13 +1,18 @@
 <html>
   <head>
     <title>Score Card</title>
-    <link rel="stylesheet" href="https://abhinavpalugula.github.io/basket-ball/style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p id="date"></p>
+    <div id="demo"></div>
+    <div style="margin-top: 30px;" id="inputdiv">
+      <input type="text" placeholder="Team1 Name" style="height:30px;border:none;border-radius:8px;" id="inputone">
+      <input type="text" placeholder="Team2 Name" style="height:30px;border:none;border-radius:8px;" id="inputtwo">
+      <button type="button" onclick="input1()">Submit</button>
+    </div>
     <div class="main-div">
       <div class="home-div">
-        <p style="margin-bottom: 0px;color:white;font-size:20px;font-weight: bold;">Home</p>
+        <p style="margin-bottom: 0px;color:white;font-size:20px;font-weight: bold;" id="team1name"></p>
         <div class="score" id="home-score"></div>
         <div class="home-buttons">
           <button class="incre-button" onclick="add1home()">+1</button>
@@ -15,8 +20,8 @@
           <button class="incre-button" onclick="add3home()">+3</button>
         </div>
       </div>
-     <div class="home-div">
-        <p style="margin-bottom: 0px;color:white;font-size:20px;font-weight: bold;">GUEST</p>
+       <div class="home-div">
+        <p style="margin-bottom: 0px;color:white;font-size:20px;font-weight: bold;" id="team2name"></p>
         <div class="score" id="guest-score"></div>
         <div class="home-buttons">
           <button class="incre-button" onclick="add1guest()">+1</button>
@@ -27,6 +32,6 @@
     </div>
     <p style = "text-align:center;color:white;" id = "leading"></p>
     <button class="incre-button" style="text-align:center" onclick="reset()" >Reset</button>
-    <script src="https://abhinavpalugula.github.io/basket-ball/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

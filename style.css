@@ -1,6 +1,7 @@
-body{background-color:dodgerblue;text-align: center; display: block;}
+body{background-color:dodgerblue;text-align: center;}
 .main-div{
-  display: block;
+  display: flex;
+  justify-content: space-around;
 }
 .home-div{
   
@@ -34,11 +35,18 @@ body{background-color:dodgerblue;text-align: center; display: block;}
   padding:3px 10px;
   cursor:pointer;
 }
-#date{
+
+#demo{
   background-color: white;
-  border: none;
-  border-radius: 15px;
-  padding: 10px 15px;
-  text-align: center;
-  display: inline-block;
+  border-radius: 8px;
+  padding: 5px 20px;
+  display:inline;
+  margin-top: 10px;
+}
+
+.inputcss{
+  border:none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 25px;
 }
