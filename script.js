@@ -4,7 +4,6 @@ function input1(){
   document.getElementById("team1name").innerHTML = team1;
   document.getElementById("team2name").innerHTML = team2;
   document.getElementById("inputdiv").style.display = "none";
-  document.getElementsByClassName("main-div").style.display = "flex";
 }
 
 let homeScore = 0;
